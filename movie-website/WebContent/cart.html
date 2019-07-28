@@ -1,0 +1,36 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fablix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 style="text-align: center;">Shopping Cart</h1>
+<div id="item_list"></div>
+
+<div id="checkout"> 
+	<a href="/movie-website" >Add More to Cart</a>
+	<button id="checkout-button" type="button">Proceed To Checkout</button>
+</div>
+<div class="checkout-modal"> 
+	<div class="modal-container">
+		<h1 style="text-align: center;">Complete Your Purchase</h1>
+		 <form id="checkout_form" method="get">
+	    		<input type="text" placeholder="Credit Card Number" name="ccid" required>
+	    		<input type="text" placeholder="Expiration Date" name="date" required>
+	    		<input type="text" placeholder="First Name" name="first" required>
+	    		<input type="text" placeholder="Last Name" name="last" required>
+	    		<input type="submit" value="Checkout">
+	     </form>
+	     <div id="display-invalid">
+	     	Invalid information. Try again
+	     </div>
+	</div>
+</div>
+
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='cart.js'></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	background-color: #fefefe;
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	/*border: 1px solid black;*/
+}
+
+.movie-container{
+	padding: 20px;
+	background-color: #ffffff;
+	text-align: left;
+	margin: 50px;
+	border-radius: 20px;
+	-webkit-box-shadow: 3px 4px 44px -1px rgba(138, 117, 138, 0.41);
+	-moz-box-shadow : 3px 4px 44px -1px rgba( 138, 117, 138, 0.41);
+	box-shadow : 3px 4px 44px -1px rgba( 138, 117, 138, 0.41);
+}
+
+.movie-container p a{
+	color: black;
+	text-decoration: none;
+}
+
+.movie-container p a:hover{
+	color: blue;
+	text-decoration: underline;
+}
+
+.main-nav {
+	height: 80px;
+	background-color: #c57575;
+}
+
+
+.main-nav-text{
+	text-decoration: none;
+	color: black;
+}
+
+.main-nav-text:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+.addToCart{
+	transform: translateX(70px);
+    color: white;
+    background: #6191f3;
+    border-radius: 4px;
+    padding: 10px;
+}

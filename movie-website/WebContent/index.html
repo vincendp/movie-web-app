@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FabFlix</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto"
+	rel="stylesheet">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+	
+</head>
+<body>
+	<div class="popup-container">
+	  <p class="popup-text">Item successfully added to cart!</p>
+	</div>
+	<img class="loader" src="svg-loaders/bars.svg">
+	<div class="main-nav">
+		<div class="f">
+			<div style="width: 60%;">
+				<a href="/movie-website" style="color:black;">
+					<span style="float: left; margin-left: 20%;">Welcome to
+						FabFlix</span>
+				</a>
+				
+			</div>
+			<div class="f2">
+				<div class="search-button">Search</div>
+				<div class="browse-button">Browse</div>
+				<a href="cart.html">Shop</a>
+			</div>
+		</div>
+
+		<div class="search-modal">
+			<div class="modal-container">
+				<h1 style="text-align:center;">Search for a Movie</h1>
+				<form id="search_form" method="get">
+					<input type="text" placeholder="Title" name="title"> <input
+						type="text" placeholder="Year" name="year"> <input
+						type="text" placeholder="Director" name="director"> <input
+						type="text" placeholder="Star" name="star"> <input
+						type="submit">
+				</form>
+				
+			</div>
+		</div>
+
+		<div class="browse-modal">
+			<div class="modal-container">
+				<h1 style="text-align:center;">Browse By Title</h1>
+				<div class="bf-container"></div>
+				<h1 style="text-align:center;">Browse By Genre</h1>
+				<div class="genre-container"></div>
+			</div>
+		</div>
+
+	</div>
+	<div class="select-container">
+		<form id="sort_form" method="get">
+			<select>
+				<option disabled selected>Sort Movies By...</option>
+				<option value="title ASC">Title Ascending</option>
+				<option value="title DESC">Title Descending</option>
+				<option value="movie ASC">Rating Ascending</option>
+				<option value="movie DESC">Rating Descending</option>
+			</select>
+		</form>
+		<input class="fts-input" type="text"/>
+		
+		<select class="limit-selector">
+			<option disabled selected>Movies Per Page...</option>
+			<option>10</option>
+			<option>20</option>
+			<option>30</option>
+			<option>40</option>
+			<option>50</option>
+			<option>60</option>
+			<option>70</option>
+			<option>80</option>
+		</select>
+		
+	</div>
+	<div class="main-container"></div>
+
+	<footer>
+		<div class="pagination-container"></div>
+	</footer>
+
+	<script src="fts.js"></script>
+	<script src="index.js"></script>
+	<script src="browse.js"></script>
+
+</body>
+</html>

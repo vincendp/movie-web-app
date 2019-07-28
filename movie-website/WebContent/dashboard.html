@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+</head>
+<body>
+
+
+<h2> Add a Star</h2>
+<form id="star-form" method="get" action="#">
+	<input type="text" placeholder="Star Name" name="star-name" required>
+    <input type="number" placeholder="Birth Year" name="year">
+    <input class="submit-button" type="submit">
+</form>
+
+<div id="star-status"></div>
+
+<h2> Add a Movie & Add Star/Genre</h2>
+<form id="movie-form" method="get" action="#">
+	<input type="text" placeholder="Movie Title" name="movie-title" required>
+    <input type="number" placeholder="Movie Year" name="movie-year" required>
+    <input type="text" placeholder="Director" name="movie-director" required>
+    <input type="text" placeholder="Star Name" name="movie-star" required>
+    <input type="text" placeholder="Genre" name="movie-genre" required>
+    <input class="submit-button" type="submit">
+</form>
+
+<div id="movie-status"></div>
+
+<h2> Metadata</h2>
+<div id="metadata-container"> </div>
+
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='dashboard.js'></script>
+</body>
+</html>

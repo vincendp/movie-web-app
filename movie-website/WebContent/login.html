@@ -1,0 +1,37 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login to Fablix</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+  <body class="login-body">
+    <div class="card">
+      <h2>Welcome to FabFlix!</h2>
+      <form id="login_form" method="post" action="#">
+        <div class="input-flex">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" />
+        </div>
+        <div class="input-flex">
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" />
+        </div>
+        <input class="submit-button" type="submit" value="Login" />
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LfXO5AUAAAAAAgZZiiCjRRDjXpTcoAw5YpqlxdN"
+        ></div>
+      </form>
+    </div>
+
+    <div id="login_error_message"></div>
+
+    <!-- include jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- include our own JS file -->
+    <script src="./login.js"></script>
+  </body>
+</html>
